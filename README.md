@@ -10,6 +10,6 @@ Um projeto aberto para fazer um sistema de gerenciamento de fichas para jogadore
 #### Link do grupo do whatsapp / telegram:
 
 #### Email para contato:
-
+pentexsa@gmail.com
 #### PROGRAMACAO:
 [ LEIA AQUI ](https://github.com/PentexSA/TokenManagerSystem/blob/master/programacao.md)
