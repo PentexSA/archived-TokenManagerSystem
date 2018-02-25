@@ -12,4 +12,4 @@ Um projeto aberto para fazer um sistema de gerenciamento de fichas para jogadore
 #### Email para contato:
 
 #### PROGRAMACAO:
-[ LEIA AQUI ](https://github.com/PentexSA/TokenManagerSystem/tree/79c3407a55adc6baa4517fd99bc2ed8e48646606)
+[ LEIA AQUI ](https://github.com/PentexSA/TokenManagerSystem/blob/master/programacao.md)
