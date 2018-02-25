@@ -5,11 +5,11 @@ Um projeto aberto para fazer um sistema de gerenciamento de fichas para jogadore
 
 ## Como colaborar
 
-####Nosso Trello:
+#### Nosso Trello:
 
-####Link do grupo do whatsapp / telegram:
+#### Link do grupo do whatsapp / telegram:
 
-####Email para contato:
+#### Email para contato:
 
 #### PROGRAMACAO:
 [ LEIA AQUI ](https://github.com/PentexSA/TokenManagerSystem/tree/79c3407a55adc6baa4517fd99bc2ed8e48646606)
