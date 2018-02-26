@@ -1,0 +1,24 @@
+page-mage {
+	.image{
+		background-image: url('../assets/imgs/MageToken.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	.attributes {
+
+	}
+
+	.plusButton{
+
+	}
+
+	ion-icon {
+    	font-size: 15px;
+  	}
+  	ion-button{
+  		width: 6px;
+  		height: 12px;
+  	}
+}
