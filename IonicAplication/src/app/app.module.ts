@@ -11,6 +11,7 @@ import { LoginPage } from '../pages/login/login';
 import { PlayerPage } from '../pages/player/player';
 import { RegisterPage } from '../pages/register/register';
 import { MagePage } from '../pages/mage/mage';
+import { VampirePage } from '../pages/vampire/vampire';
 
 // firebase configs
 import { AngularFireModule } from 'angularfire2';
@@ -24,7 +25,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     LoginPage,
     PlayerPage,
     RegisterPage,
-    MagePage // this page gonna be the token (gonna be improved)
+    MagePage, // this page gonna be the token (gonna be improved)
+    VampirePage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     LoginPage,
     PlayerPage,
     RegisterPage,
-    MagePage
+    MagePage,
+    VampirePage
   ],
   providers: [
     StatusBar,

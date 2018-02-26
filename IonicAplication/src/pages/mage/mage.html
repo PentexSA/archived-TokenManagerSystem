@@ -6,7 +6,13 @@
 
   We are using classes to html and id's for ionic itens.
 -->
-<ion-header><ion-title>Mage Token</ion-title></ion-header>
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Mage Token</ion-title>
+  </ion-navbar>
+
+</ion-header>
 
 <ion-content padding class="image">
 
@@ -16,35 +22,53 @@
 			<div class="column left">
 				<ion-list>
 					<ion-item id="name">
-						<ion-label>Nome</ion-label>
-						<ion-input type="nome"></ion-input>
+						<ion-input placeholder="Nome" type="nome"></ion-input>
 					</ion-item>
-
-					<h6>Idade</h6>
-					<h6>Jogador</h6>
+					
+					<ion-item id="player">
+						<ion-input placeholder="Idade" type="idade"></ion-input>
+					</ion-item>
+					
+					<ion-item id="player">
+						<ion-input placeholder="Jogador" type="jogador"></ion-input>
+					</ion-item>
 				</ion-list>
 			</div>
 
 			<div class="column middle">
-				<h6>Conceito</h6>
-				<h6>Virtude</h6>
-				<h6>Vida</h6>
+				<ion-list>
+					<ion-item id="concept">
+						<ion-input placeholder="Conceito" type="conceito"></ion-input>
+					</ion-item>
+					
+					<ion-item id="virtue">
+						<ion-input placeholder="Virtude" type="virtude"></ion-input>
+					</ion-item>
+					
+					<ion-item id="life">
+						<ion-input placeholder="Vida" type="vida"></ion-input>
+					</ion-item>
+				</ion-list>
 			</div>
 
 			<div class="column right">
-				<h6>Crônica</h6>
-				<h6>Nome do grupo</h6>
-				<h6>Facção</h6>
+				<ion-list>
+					<ion-item id="cronic">
+						<ion-input placeholder="Crônica" type="nome"></ion-input>
+					</ion-item>
+					
+					<ion-item id="groupName">
+						<ion-input type="nomeDoGrupo"></ion-input>
+					</ion-item>
+					
+					<ion-item id="faction">
+						<ion-input type="faccao"></ion-input>
+					</ion-item>
+				</ion-list>
 			</div>
 
 		</div>		
 	</div>
-
-		
-				
-		
-
-
 
 
 
