@@ -12,14 +12,27 @@ page-mage {
 	    height: 120px;
 	    width: 33%;
 	}
-	.column right{}
-	.column center{}
 	.column left{}
+	.column center{}
+	.column right{}
 
+<<<<<<< HEAD
 
 
 	#name{
+=======
+	.attributes {
 		
+	}
+
+	.center {
+>>>>>>> origin
+		
+	}
+
+
+	#name{
+		heigth: 40px;
 	}
 
 	.image{
@@ -29,8 +42,12 @@ page-mage {
 		background-size: contain;
 	}
 
+<<<<<<< HEAD
 	.teste {
 		height: 35px;
 	}
 
 }
+=======
+}
+>>>>>>> origin
