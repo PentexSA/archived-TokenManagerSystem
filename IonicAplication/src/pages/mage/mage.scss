@@ -1,0 +1,30 @@
+page-mage {
+
+	.row:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	}
+
+	.column {
+	    float: left;
+	    padding: 10px;
+	    height: 100px;
+	    width: 33%;
+	}
+	.column right{}
+	.column center{}
+	.column left{}
+
+	#name{
+		
+	}
+
+	.image{
+		background-image: url('../assets/imgs/MageToken.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+}
