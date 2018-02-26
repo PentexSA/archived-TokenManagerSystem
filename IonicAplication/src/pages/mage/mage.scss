@@ -1,4 +1,25 @@
 page-mage {
+
+	.row:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	}
+
+	.column {
+	    float: left;
+	    padding: 10px;
+	    height: 100px;
+	    width: 33%;
+	}
+	.column right{}
+	.column center{}
+	.column left{}
+
+	#name{
+		
+	}
+
 	.image{
 		background-image: url('../assets/imgs/MageToken.jpg');
 		background-repeat: no-repeat;
@@ -6,19 +27,4 @@ page-mage {
 		background-size: contain;
 	}
 
-	.attributes {
-
-	}
-
-	.plusButton{
-
-	}
-
-	ion-icon {
-    	font-size: 15px;
-  	}
-  	ion-button{
-  		width: 6px;
-  		height: 12px;
-  	}
 }

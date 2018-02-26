@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -15,10 +15,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MagePage {
 
+  @ViewChild('first') first;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   plusOne(){
-
+  	this.first.checked("true");
   }
 }
