@@ -19,112 +19,79 @@
 	<div class="playerDetails">
 		<div class="row">
 
-			<div class="column-left">
+			<div class="column">
 				<ion-list>
-					<ion-item id="name">
+					<ion-item>
 						<ion-input placeholder="Nome" type="nome"></ion-input>
 					</ion-item>
 					
-					<ion-item id="player">
+					<ion-item>
 						<ion-input placeholder="Jogador" type="jogador"></ion-input>
 					</ion-item>
 					
-					<ion-item id="cronic">
+					<ion-item>
 						<ion-input placeholder="Crônica" type="cronic"></ion-input>
 					</ion-item>
 				</ion-list>
 			</div>
 
-			<div class="column-middle">
+			<div class="column">
 				<ion-list>
-					<ion-item id="nature">
+					<ion-item>
 						<ion-input placeholder="Natureza" type="natureza"></ion-input>
 					</ion-item>
 					
-					<ion-item id="behavior">
+					<ion-item>
 						<ion-input placeholder="Comportamento" type="comportamento"></ion-input>
 					</ion-item>
 					
-					<ion-item id="clan">
+					<ion-item>
 						<ion-input placeholder="Clã" type="cla"></ion-input>
 					</ion-item>
 				</ion-list>
 			</div>
 
-			<div class="column-right">
+			<div class="column">
 				<ion-list>
-					<ion-item id="generation">
+					<ion-item>
 						<ion-input placeholder="Geração" type="geracao"></ion-input>
 					</ion-item>
 					
-					<ion-item id="refuge">
+					<ion-item>
 						<ion-input placeholder="Refúgio" type="refugio"></ion-input>
 					</ion-item>
 					
-					<ion-item id="concept">
+					<ion-item>
 						<ion-input placeholder="Conceito" type="conceito"></ion-input>
 					</ion-item>
 				</ion-list>
 			</div>
 
-		</div>	
+		</div>
 	</div>
 
 	<div class="abilities">
 		<div class="row">
-			<div class="column-left">
-				<ion-list id="strength">
+			<div class="column">
+				<ion-list>
 					<ion-item>
-						<ion-label>Destreza</ion-label>
-						<input type="radio">
-					</ion-item>
-					
-					<ion-item>
-						<ion-label>Destreza</ion-label>
-						<input type="radio">
-					</ion-item>
-					
-					<ion-item>
-						<ion-label>Vigor</ion-label>
-						<ion-radio></ion-radio>
+						<ion-label>Talentos</ion-label>
 					</ion-item>
 				</ion-list>
 			</div>
 			
-			<div class="column-middle">
-				<ion-list id="socials">
+			<div class="column">
+				<ion-list>
 					<ion-item>
-						<ion-label>Carisma</ion-label>
-						<input type="radio">
-					</ion-item>
-					
-					<ion-item>
-						<ion-label>Manipulação</ion-label>
-						<input type="radio">
-					</ion-item>
-					
-					<ion-item>
-						<ion-label>Aparência</ion-label>
-						<ion-radio></ion-radio>
+						<ion-label>Perícias</ion-label>
 					</ion-item>
 				</ion-list>
 			</div>
 			
-			<div class="column-right">
-				<ion-list id="strength">
+			<div class="column">
+				<ion-list>
 					<ion-item>
-						<ion-label>Percepção</ion-label>
-						<input type="radio">
-					</ion-item>
-					
-					<ion-item>
-						<ion-label>Inteligência</ion-label>
-						<input type="radio">
-					</ion-item>
-					
-					<ion-item>
-						<ion-label>Raciocínio</ion-label>
-						<ion-radio></ion-radio>
+						<ion-label>Conhecimentos</ion-label>
 					</ion-item>
 				</ion-list>
 			</div>
@@ -133,19 +100,35 @@
 	</div>
 
 	<div class="benefits">
-		<div class="ancestor"><h2>Antecedentes</h2></div>
+		<div class="row">
+			<div class="column"><ion-label>Antecedentes</ion-label></div>
 
-		<div class="disciplines"><h2>Disciplinas</h2></div>
-		
-		<div class="virtues"><h2>Virtudes</h2></div>
+			<div class="column"><ion-label>Disciplinas</ion-label></div>
+			
+			<div class="column"><ion-label>Virtudes</ion-label></div>
+		</div>
 	</div>
 	
 	<div class="footer">
-		<div class="qualities"><h2>Qualidades</h2></div>
+		<div class="row">
 
-		<div class="humanity"><h2>Humanidade</h2></div>
-		
-		<div class="vitality"><h2>Vitalidade</h2></div>
+			<div class="column"><ion-label>Qualidades</ion-label></div>
+
+			<div class="column">
+				<div class="humanity"><ion-label>Humanidade</ion-label></div>
+
+				<div class="willpower"><ion-label>Força de vontade</ion-label></div>
+
+				<div class="blood-points"><ion-label>Pontos de sangue</ion-label></div>
+			</div>
+			
+			<div class="column">
+				<div class="vitality"><ion-label>Vitalidade</ion-label></div>
+
+				<div class="experience"><ion-label>Experiência</ion-label></div>
+			</div>
+
+		</div>
 	</div>
 
 
