@@ -17,83 +17,39 @@
 <ion-content padding class="image">
 
 	<div class="playerDetails">
+
 		<div class="row">
 
-			<div class="column">
-				<ion-list>
-					<ion-item>
-						<ion-input placeholder="Nome" type="nome"></ion-input>
-					</ion-item>
-					
-					<ion-item>
-						<ion-input placeholder="Jogador" type="jogador"></ion-input>
-					</ion-item>
-					
-					<ion-item>
-						<ion-input placeholder="Crônica" type="cronic"></ion-input>
-					</ion-item>
-				</ion-list>
+			<div class="column" *ngFor="let right of rights">
+				<ul><li><ion-input placeholder="{{right}}"></ion-input></li></ul>
 			</div>
 
-			<div class="column">
-				<ion-list>
-					<ion-item>
-						<ion-input placeholder="Natureza" type="natureza"></ion-input>
-					</ion-item>
-					
-					<ion-item>
-						<ion-input placeholder="Comportamento" type="comportamento"></ion-input>
-					</ion-item>
-					
-					<ion-item>
-						<ion-input placeholder="Clã" type="cla"></ion-input>
-					</ion-item>
-				</ion-list>
+			<div class="column" *ngFor="let middle of middles">
+				<ul><li><ion-input placeholder="{{middle}}"></ion-input></li></ul>
 			</div>
 
-			<div class="column">
-				<ion-list>
-					<ion-item>
-						<ion-input placeholder="Geração" type="geracao"></ion-input>
-					</ion-item>
-					
-					<ion-item>
-						<ion-input placeholder="Refúgio" type="refugio"></ion-input>
-					</ion-item>
-					
-					<ion-item>
-						<ion-input placeholder="Conceito" type="conceito"></ion-input>
-					</ion-item>
-				</ion-list>
+			<div class="column" *ngFor="let left of lefts">
+				<ul><li><ion-input placeholder="{{left}}"></ion-input></li></ul>
 			</div>
 
 		</div>
 	</div>
 
 	<div class="abilities">
+
+		<div class="button"><button ion-button block color="default" (click)="showOptions()">Atributos</button></div>
+
 		<div class="row">
-			<div class="column">
-				<ion-list>
-					<ion-item>
-						<ion-label>Talentos</ion-label>
-					</ion-item>
-				</ion-list>
+			<div class="column" *ngFor="let talent of talents">
+				<ul><li>{{talent}}</li></ul>
 			</div>
 			
-			<div class="column">
-				<ion-list>
-					<ion-item>
-						<ion-label>Perícias</ion-label>
-					</ion-item>
-				</ion-list>
+			<div class="column" *ngFor="let expertise of expertises">
+				<ul><li>{{expertise}}</li></ul>
 			</div>
 			
-			<div class="column">
-				<ion-list>
-					<ion-item>
-						<ion-label>Conhecimentos</ion-label>
-					</ion-item>
-				</ion-list>
+			<div class="column" *ngFor="let knowledge of knowledges">
+				<ul><li>{{knowledge}}</li></ul>
 			</div>
 			
 		</div>

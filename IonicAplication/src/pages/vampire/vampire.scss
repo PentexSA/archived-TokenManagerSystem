@@ -1,5 +1,5 @@
 page-vampire {
-	/*
+/*
 	.image{
 		background-image: url('../assets/imgs/VampireToken.jpg');
 		background-repeat: no-repeat;
@@ -7,12 +7,27 @@ page-vampire {
 		background-size: contain;
 	}
 */
+
+	.button{
+	    display: inline;
+	}
+
 	.column {
 	    float: left;
 	    width: 33.33%;
 	    padding: 10px;
-	    height: 180px;
+	    margin: 0px;
+	    height: 40px;
 	}
 
+	.column > ul{
+		list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    height: 30px;
+	}
 
+	.column > li{
+
+	}
 }
