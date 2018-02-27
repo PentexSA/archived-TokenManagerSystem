@@ -10,6 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 // pages
 import { MagePage } from '../mage/mage';
+import { VampirePage } from '../vampire/vampire';
 
 @IonicPage()
 @Component({
@@ -23,6 +24,10 @@ export class PlayerPage {
 
   mage(){
   	this.navCtrl.push(MagePage);
+  }
+  
+  vampire(){
+  	this.navCtrl.push(VampirePage);
   }
 
 }

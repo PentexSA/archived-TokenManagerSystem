@@ -1,0 +1,103 @@
+<!--
+  Generated template for the MagePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+
+  We are using classes to html and id's for ionic itens.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Vampire Token</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="image">
+
+	<div class="playerDetails">
+
+		<div class="button"><button ion-button color="default">Detalhes do Jogador</button></div>
+
+		<div class="row">
+
+			<div class="column" *ngFor="let left of lefts">
+				<ul><li><ion-input placeholder="{{left}}"></ion-input></li></ul>
+			</div>
+
+			<div class="column" *ngFor="let middle of middles">
+				<ul><li><ion-input placeholder="{{middle}}"></ion-input></li></ul>
+			</div>
+
+			<div class="column" *ngFor="let right of rights">
+				<ul><li><ion-input placeholder="{{right}}"></ion-input></li></ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="abilities">
+
+		<div class="button"><button ion-button color="default">Atributos</button></div>
+
+		<div class="row">
+			<div class="column" *ngFor="let talent of talents">
+				<ul><li>{{talent}}</li></ul>
+			</div>
+			
+			<div class="column" *ngFor="let expertise of expertises">
+				<ul><li>{{expertise}}</li></ul>
+			</div>
+			
+			<div class="column" *ngFor="let knowledge of knowledges">
+				<ul><li>{{knowledge}}</li></ul>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="benefits">
+
+		<div class="button"><button ion-button color="default">Vantagens</button></div>
+
+		<div class="row">
+			<div class="column"><ion-label>Antecedentes</ion-label></div>
+
+			<div class="column"><ion-label>Disciplinas</ion-label></div>
+			
+			<div class="column"><ion-label>Virtudes</ion-label></div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="row">
+
+			<div class="column">
+				<div class="button"><button ion-button color="default">Qualidades</button></div>
+			</div>
+
+			<div class="column">
+				<div class="humanity"><ion-label>Humanidade</ion-label></div>
+
+				<div class="willpower"><ion-label>Força de vontade</ion-label></div>
+
+				<div class="blood-points"><ion-label>Pontos de sangue</ion-label></div>
+			</div>
+			
+			<div class="column">
+				<div class="vitality" *ngFor="let life of vitalitie">
+					<ion-list><ion-item>
+						<ion-label>{{life}}</ion-label>
+    					<ion-checkbox></ion-checkbox>
+					</ion-item></ion-list>
+				</div>
+
+				<div class="experience"><ion-label>Experiência</ion-label></div>
+			</div>
+
+		</div>
+	</div>
+
+
+</ion-content>

@@ -9,15 +9,17 @@ page-mage {
 	.column {
 	    float: left;
 	    padding: 10px;
-	    height: 100px;
+	    height: 120px;
 	    width: 33%;
 	}
-	.column right{}
-	.column center{}
 	.column left{}
+	.column center{}
+	.column right{}
+	.attributes {}
+	.center {}
 
 	#name{
-		
+		heigth: 40px;
 	}
 
 	.image{
@@ -27,4 +29,7 @@ page-mage {
 		background-size: contain;
 	}
 
+	.teste {
+		height: 35px;
+	}
 }
