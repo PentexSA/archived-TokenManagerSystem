@@ -15,18 +15,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class VampirePage {
 
-  rights: any = true;
-  middles: any = true;
   lefts: any = true;
+  middles: any = true;
+  rights: any = true;
   
   talents: any = true;
   expertises: any = true;
   knowledges: any = true;
 
+  vitalitie: any = true;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	this.rights = ['Nome', 'Jogador', 'Crônica'];
+  	this.lefts = ['Nome', 'Jogador', 'Crônica'];
   	this.middles = ['Natureza', 'Comportamento', 'Clã'];
-  	this.lefts = ['Geração', 'Refúgio', 'Conceito'];
+  	this.rights = ['Geração', 'Refúgio', 'Conceito'];
 
   	this.talents = ['Prontidão', 'Esportes', 'Briga',
   	'Esquiva', 'Empatia', 'Expressão', 'Intimidação',
@@ -37,9 +39,8 @@ export class VampirePage {
   	this.knowledges = ['Acadêmicos', 'Computador', 'Finanças',
   	'Investigação', 'Direito', 'Linguística', 'Medicina',
   	'Ocultismo', 'Política', 'Ciência'];
-  }
 
-  showOptions(){
-  	
+    this.vitalitie = ['Escoriado', 'Machucado', 'Ferido',
+    'Ferido Gravemente', 'Espancado', 'Aleijado', 'Incapacitado'];
   }
 }
