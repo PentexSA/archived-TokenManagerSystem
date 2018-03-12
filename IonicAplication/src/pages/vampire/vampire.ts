@@ -43,4 +43,8 @@ export class VampirePage {
     this.vitalitie = ['Escoriado', 'Machucado', 'Ferido',
     'Ferido Gravemente', 'Espancado', 'Aleijado', 'Incapacitado'];
   }
+
+  saveToken(){
+    console.log("Sua ficha foi salva!");
+  }
 }

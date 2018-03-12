@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 
 /**
  * Generated class for the PlayerPage page.
@@ -28,6 +28,10 @@ export class PlayerPage {
   
   vampire(){
   	this.navCtrl.push(VampirePage);
+  }
+
+  clicked(){
+    console.log("Was clicked");
   }
 
 }

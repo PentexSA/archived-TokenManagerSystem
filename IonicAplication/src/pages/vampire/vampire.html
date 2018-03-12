@@ -18,9 +18,11 @@
 
 	<div class="playerDetails">
 
-		<div class="button"><button ion-button color="default">Detalhes do Jogador</button></div>
+		<div class="button">
+			<button ion-button color="default" (click)="details=!details" [ngClass]="{active: clicked}">Detalhes do Jogador</button>
+		</div>
 
-		<div class="row">
+		<div class="row" [hidden]="!details">
 
 			<div class="column" *ngFor="let left of lefts">
 				<ul><li><ion-input placeholder="{{left}}"></ion-input></li></ul>
@@ -39,9 +41,11 @@
 
 	<div class="abilities">
 
-		<div class="button"><button ion-button color="default">Atributos</button></div>
+		<div class="button">
+			<button ion-button color="default" (click)="abilities=!abilities" [ngClass]="{active: abilities}">Atributos</button>
+		</div>
 
-		<div class="row">
+		<div class="row" [hidden]="!abilities">
 			<div class="column" *ngFor="let talent of talents">
 				<ul><li>{{talent}}</li></ul>
 			</div>
@@ -59,9 +63,11 @@
 
 	<div class="benefits">
 
-		<div class="button"><button ion-button color="default">Vantagens</button></div>
+		<div class="button">
+			<button ion-button color="default" (click)="benefits=!benefits" [ngClass]="{active: benefits}">Vantagens</button>
+		</div>
 
-		<div class="row">
+		<div class="row" [hidden]="!benefits">
 			<div class="column"><ion-label>Antecedentes</ion-label></div>
 
 			<div class="column"><ion-label>Disciplinas</ion-label></div>
@@ -70,7 +76,7 @@
 		</div>
 	</div>
 	
-	<div class="footer">
+	<div class="anotherName">
 		<div class="row">
 
 			<div class="column">
@@ -86,7 +92,12 @@
 			</div>
 			
 			<div class="column">
-				<div class="vitality" *ngFor="let life of vitalitie">
+
+				<div class="button">
+					<button ion-button color="default" (click)="health=!health" [ngClass]="{active: health}">Vida</button>
+				</div>
+
+				<div class="vitality" [hidden]="!health" *ngFor="let life of vitalitie">
 					<ion-list><ion-item>
 						<ion-label>{{life}}</ion-label>
     					<ion-checkbox></ion-checkbox>
@@ -97,6 +108,12 @@
 			</div>
 
 		</div>
+	</div>
+
+	<div class="tokenConfigurations">
+		
+		<div><button ion-button class="button" color="secondary" (click)="saveToken()">Save Token</button></div>
+
 	</div>
 
 
