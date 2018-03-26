@@ -34,5 +34,8 @@ $RECYCLE.BIN/
 Thumbs.db
 UserInterfaceState.xcuserstate
 
-#firebase configurations
+# balsamiq mockups project files
+*.bmpr
+
+# firebase configurations
 firebase/firebase.ts

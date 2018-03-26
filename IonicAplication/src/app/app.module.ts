@@ -7,42 +7,29 @@ import { StatusBar } from '@ionic-native/status-bar';
 // pages
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { LoginPage } from '../pages/login/login';
-import { PlayerPage } from '../pages/player/player';
-import { RegisterPage } from '../pages/register/register';
-import { MagePage } from '../pages/mage/mage';
-import { VampirePage } from '../pages/vampire/vampire';
 
 // firebase configs
-import { AngularFireModule } from 'angularfire2';
 import { firebase } from '../firebase/firebase';
+import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    LoginPage,
-    PlayerPage,
-    RegisterPage,
-    MagePage, // this page gonna be the token (gonna be improved)
-    VampirePage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebase),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    LoginPage,
-    PlayerPage,
-    RegisterPage,
-    MagePage,
-    VampirePage
   ],
   providers: [
     StatusBar,
