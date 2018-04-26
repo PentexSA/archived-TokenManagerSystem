@@ -11,8 +11,8 @@ module.exports = ()=> {
     
     let app = express();
 
-    app.set('view engine', 'ejs');
-    app.set('views','./app/views');
+    //app.set('view engine', 'ejs');
+    //app.set('views','./app/views');
 
     app.use(body_parser.json());
     app.use(Express_Validator());

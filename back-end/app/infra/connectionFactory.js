@@ -4,7 +4,7 @@ function createDBconnection(){
             host : 'localhost',
             user : 'root',
             password : 'assismenina123',
-            database : "casadocodigo_nodejs"
+            database : "TMS"
         });
 }
 
