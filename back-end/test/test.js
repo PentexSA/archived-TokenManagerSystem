@@ -7,6 +7,12 @@ describe('#JsonController', ()=> {
         .send({login:"jeff", senha:"Headbanger"})
         .expect(200,done);
         done();
-    });      
+    });
+    it('#Verificação de usuario no banco de dados',(done)=>{
+        request.post('/login')
+        .send({login:"jeff", senha:"Headbanger"})
+        .expect(200)
+        .expect(true,done);
+    });
 });
 
