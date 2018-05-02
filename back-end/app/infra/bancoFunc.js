@@ -14,7 +14,7 @@ class bancoFunc{
     delete(id,callback){
         return this.connection.query('DELETE from produtos WHERE id = (?)',[login.login],callback);
     }
-    recuperar(id,callback){
-        return this.connection.query('SELECT login from usuarios WHERE login = (?)',[login.login],callback);
+    validar(json,callback){
+        return this.connection.query('SELECT * FROM usuarios WHERE login = (?)',json.login,callback);
     }
 }
