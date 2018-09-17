@@ -1,0 +1,36 @@
+<!-- This page is responsible for the edit in tokens -->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<form [formGroup]="tokenForm">
+
+		<ion-item>
+			<ion-label stacked>Nome: </ion-label>
+			<ion-input formControlName="name" type="text"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>Sistema da ficha: </ion-label>
+			<ion-select formControlName="game">
+		    	<ion-option value="vampire">Vampire: the masquerade</ion-option>
+		    	<ion-option value="mage">Mage: awakening</ion-option>
+		    </ion-select>
+		</ion-item>
+
+		<ion-item>
+			<button ion-button block type="submit" (click)="save()">Salvar</button>
+		</ion-item>
+
+	</form>
+	
+
+</ion-content>

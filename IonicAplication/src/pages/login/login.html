@@ -1,0 +1,35 @@
+<!-- This page is responsible for the user login -->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-list>
+
+		<ion-item>
+			<ion-label floating>E-mail</ion-label>
+			<ion-input #email type="text"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label floating>Password</ion-label>
+			<ion-input #password type="password"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<button ion-button block color="primary" (click)="login()">Login</button>
+		</ion-item>
+
+		<ion-item>
+			<button ion-button block color="secondary" (click)="register()">Register</button>
+		</ion-item>
+
+	</ion-list>
+
+</ion-content>

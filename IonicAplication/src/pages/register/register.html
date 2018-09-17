@@ -1,0 +1,32 @@
+<!-- This page is responsible for the user register for common email and password -->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-list>
+
+		<ion-item>
+			<ion-label floating>E-mail</ion-label>
+			<ion-input #email type="text"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label floating>Password</ion-label>
+			<ion-input #password type="password"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<button ion-button block color="primary" (click)="register()">Register</button>
+		</ion-item>
+
+	</ion-list>
+
+</ion-content>

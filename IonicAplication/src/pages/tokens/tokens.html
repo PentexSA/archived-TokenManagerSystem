@@ -1,0 +1,42 @@
+<!-- This page is responsible for user tokens management -->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Your Tokens</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-list>
+		<ion-item-sliding *ngFor="let token of tokens | async">
+			
+			<ion-item>
+				<h1>{{token.name}}</h1>
+				<h1>{{token.game}}</h1>
+			</ion-item>
+
+			<ion-item-options side="left">
+
+				<button ion-button color="secondary" (click)="editToken(token)">
+					<ion-icon name="create"></ion-icon>
+				</button>
+
+				<button ion-button color="danger" (click)="deleteToken(token.key)">
+					<ion-icon name="trash"></ion-icon>
+				</button>
+
+			</ion-item-options>
+
+		</ion-item-sliding>
+
+	</ion-list>
+
+	<ion-fab bottom right>
+		<button ion-fab (click)="newToken()"><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+
+</ion-content>
