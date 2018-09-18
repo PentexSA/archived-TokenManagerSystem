@@ -36,4 +36,4 @@ UserInterfaceState.xcuserstate
 *.bmpr
 
 # firebase configurations
-src/firebase/
+IonicAplication/src/firebase/firebase.ts
